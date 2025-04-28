@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8803130E-3AF
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{8159CF03-E8D0-4F07-B2AE-EEF02FF00C33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PgnConverterTest", "..\PgnConverterTest\PgnConverterTest.csproj", "{B4688E71-5AD4-4C84-AE1B-D9F972345FAD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PgnConverterTest", "..\test\PgnConverterTest.csproj", "{B4688E71-5AD4-4C84-AE1B-D9F972345FAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
