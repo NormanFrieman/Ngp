@@ -4,6 +4,10 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PackageId>NormanFrieman.PgnConverter</PackageId>
+    <Version>1.0.0</Version>
+    <Author>NormanFrieman</Author>
+    <Product>PgnConverter</Product>
   </PropertyGroup>
 
 </Project>
