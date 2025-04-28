@@ -1,4 +1,4 @@
-﻿namespace PgnConverter
+﻿namespace PgnConverter.RegexConsts
 {
     internal static class PgnRegexCatch
     {
