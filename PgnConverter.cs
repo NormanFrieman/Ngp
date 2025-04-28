@@ -1,8 +1,8 @@
 ﻿using System.Text.RegularExpressions;
-using PgnConverter.Models;
-using PgnConverter.RegexConsts;
+using PgnConverterProject.Models;
+using PgnConverterProject.RegexConsts;
 
-namespace PgnConverter
+namespace PgnConverterProject
 {
     public static class PgnConverter
     {

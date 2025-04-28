@@ -1,7 +1,7 @@
 ﻿using System.Text.RegularExpressions;
-using PgnConverter.RegexConsts;
+using PgnConverterProject.RegexConsts;
 
-namespace PgnConverter.Models
+namespace PgnConverterProject.Models
 {
     public class Pgn(string pgnStr, string[] moves)
     {

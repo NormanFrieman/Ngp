@@ -5,6 +5,12 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PgnConverter", "PgnConverter.csproj", "{C991164D-3755-49AD-852E-01AFBA8CA360}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8803130E-3AFF-41D6-B947-F5E19E68F608}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{8159CF03-E8D0-4F07-B2AE-EEF02FF00C33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PgnConverterTest", "..\PgnConverterTest\PgnConverterTest.csproj", "{B4688E71-5AD4-4C84-AE1B-D9F972345FAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +21,17 @@ Global
 		{C991164D-3755-49AD-852E-01AFBA8CA360}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C991164D-3755-49AD-852E-01AFBA8CA360}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C991164D-3755-49AD-852E-01AFBA8CA360}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4688E71-5AD4-4C84-AE1B-D9F972345FAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4688E71-5AD4-4C84-AE1B-D9F972345FAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4688E71-5AD4-4C84-AE1B-D9F972345FAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4688E71-5AD4-4C84-AE1B-D9F972345FAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C991164D-3755-49AD-852E-01AFBA8CA360} = {8803130E-3AFF-41D6-B947-F5E19E68F608}
+		{B4688E71-5AD4-4C84-AE1B-D9F972345FAD} = {8159CF03-E8D0-4F07-B2AE-EEF02FF00C33}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6C1A6D71-54E0-47F8-AD5D-AA1C4DE10454}
