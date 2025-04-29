@@ -8,6 +8,7 @@
     <Version>1.0.0</Version>
     <Author>NormanFrieman</Author>
     <Product>PgnConverter</Product>
+    <RepositoryUrl>https://github.com/NormanFrieman/pgn_converter</RepositoryUrl>
   </PropertyGroup>
 
 </Project>
