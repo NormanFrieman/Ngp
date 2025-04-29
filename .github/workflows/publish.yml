@@ -1,0 +1,13 @@
+name: Pack and publish package to nuget
+on:
+  release:
+    types: [created]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: pack
+        run: dotnet pack -p:PackageVersion=${VERSION}
+      - name: publish
+        run: dotnet nuget push ./src/bin/Release/NormanFrieman.PgnConverter.${VERSION}.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
