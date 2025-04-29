@@ -7,7 +7,20 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
+      - name: checkout
+        uses: actions/checkout@v4
+      
+      - name: set VERSION variable from tag
+        run: echo "VERSION=${GITHUB_REF/refs\/tags\/v/}" >> $GITHUB_ENV
+
+      - name: build
+        run: dotnet build --configuration Release /p:Version=${VERSION}
+      
+      - name: test
+        run: dotnet test --configuration Release /p:Version=${VERSION} --no-build
+      
       - name: pack
-        run: dotnet pack ./src/PgnConverter.csproj -p:PackageVersion=${VERSION}
+        run: dotnet pack --configuration Release /p:Version=${VERSION}
+      
       - name: publish
         run: dotnet nuget push ./src/bin/Release/NormanFrieman.PgnConverter.${VERSION}.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
