@@ -24,3 +24,14 @@ namespace PgnConverterProject.Models
         public string PgnView { get; set; } = pgnStr;
     }
 }
+
+
+// Node {
+// 	Move		string
+// 	Time		Date
+// 	Next		Node
+// 	Analysis[]	Node[]
+// 	IsAnalysis	bool
+// 	Color		bool
+// 	Comment		string
+// }
