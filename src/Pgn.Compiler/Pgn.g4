@@ -1,4 +1,4 @@
-grammar pgn;
+grammar Pgn;
 
 // PARSER
 

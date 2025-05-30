@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PgnConverter", "src\PgnConverter.csproj", "{C991164D-3755-49AD-852E-01AFBA8CA360}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pgn.Converter", "src\Pgn.Converter\Pgn.Converter.csproj", "{C991164D-3755-49AD-852E-01AFBA8CA360}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PgnConverterTest", "test\PgnConverterTest.csproj", "{B4688E71-5AD4-4C84-AE1B-D9F972345FAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pgn.Converter.Test", "tests\Pgn.Converter.Test.csproj", "{B4688E71-5AD4-4C84-AE1B-D9F972345FAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pgn.Compiler", "src\Pgn.Compiler\Pgn.Compiler.csproj", "{52195F18-84AF-4E99-8DF6-8737E83AC527}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{B4688E71-5AD4-4C84-AE1B-D9F972345FAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4688E71-5AD4-4C84-AE1B-D9F972345FAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4688E71-5AD4-4C84-AE1B-D9F972345FAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52195F18-84AF-4E99-8DF6-8737E83AC527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52195F18-84AF-4E99-8DF6-8737E83AC527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52195F18-84AF-4E99-8DF6-8737E83AC527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52195F18-84AF-4E99-8DF6-8737E83AC527}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
