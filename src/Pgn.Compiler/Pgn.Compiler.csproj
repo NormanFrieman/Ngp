@@ -1,10 +1,22 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <TargetFramework>netstandard2.1</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Antlr4 Include="Pgn.g4">
+      <Package>Pgn.Compiler</Package>
+      <Listener>True</Listener>
+      <Error>false</Error>
+      <Visitor>True</Visitor>
+      <AntOutDir>..\Pgn.Compiler.GeneratedCode</AntOutDir>
+    </Antlr4>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Antlr4.Runtime.Standard" Version="4.13.1" />
+    <PackageReference Include="Antlr4BuildTasks" Version="12.10.0" />
+  </ItemGroup>
 
 </Project>
