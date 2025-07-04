@@ -41,7 +41,7 @@ public partial class PgnParser : Parser {
 		BLACKELO=9, WHITETITLE=10, BLACKTITLE=11, RESULT=12, GAMEID=13, VARIANT=14, 
 		TIMECONTROL=15, ECO=16, OPENING=17, TERMINATION=18, ANNOTATOR=19, WHITEFIDEID=20, 
 		BLACKFIDEID=21, STUDYNAME=22, CHAPTERNAME=23, LBRACE=24, RBRACE=25, STRING_VALUE=26, 
-		ANALYSIS=27;
+		ANALYSIS=27, MOVES=28;
 	public const int
 		RULE_pgn_info = 0, RULE_info = 1, RULE_attrs = 2;
 	public static readonly string[] ruleNames = {
@@ -60,7 +60,7 @@ public partial class PgnParser : Parser {
 		"BLACKELO", "WHITETITLE", "BLACKTITLE", "RESULT", "GAMEID", "VARIANT", 
 		"TIMECONTROL", "ECO", "OPENING", "TERMINATION", "ANNOTATOR", "WHITEFIDEID", 
 		"BLACKFIDEID", "STUDYNAME", "CHAPTERNAME", "LBRACE", "RBRACE", "STRING_VALUE", 
-		"ANALYSIS"
+		"ANALYSIS", "MOVES"
 	};
 	public static readonly IVocabulary DefaultVocabulary = new Vocabulary(_LiteralNames, _SymbolicNames);
 
@@ -264,7 +264,7 @@ public partial class PgnParser : Parser {
 	}
 
 	private static int[] _serializedATN = {
-		4,1,27,20,2,0,7,0,2,1,7,1,2,2,7,2,1,0,5,0,8,8,0,10,0,12,0,11,9,0,1,1,1,
+		4,1,28,20,2,0,7,0,2,1,7,1,2,2,7,2,1,0,5,0,8,8,0,10,0,12,0,11,9,0,1,1,1,
 		1,1,1,1,1,1,1,1,2,1,2,1,2,0,0,3,0,2,4,0,1,1,0,2,23,17,0,9,1,0,0,0,2,12,
 		1,0,0,0,4,17,1,0,0,0,6,8,3,2,1,0,7,6,1,0,0,0,8,11,1,0,0,0,9,7,1,0,0,0,
 		9,10,1,0,0,0,10,1,1,0,0,0,11,9,1,0,0,0,12,13,5,24,0,0,13,14,3,4,2,0,14,

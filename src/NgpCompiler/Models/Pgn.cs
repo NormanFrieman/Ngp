@@ -11,6 +11,7 @@ namespace NgpCompiler.Models
         public string White { get; set; }
         public string Black { get; set; }
         public string Result { get; set; }
+        public string GameId { get; set; }
         public string WhiteElo { get; set; }
         public string WhiteTitle { get; set; }
         public string WhiteFideId { get; set; }
