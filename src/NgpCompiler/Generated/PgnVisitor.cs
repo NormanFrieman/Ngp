@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generated from C:/Users/Ezequiel Demetras/Documents/Projetos/PgnConverter/src/Pgn.Compiler/Pgn.g4 by ANTLR 4.13.1
+// Generated from C:/Users/Ezequiel Demetras/Documents/Projetos/Ngp/src/NgpCompiler/Pgn.g4 by ANTLR 4.13.1
 
 // Unreachable code detected
 #pragma warning disable 0162
@@ -19,7 +19,7 @@
 // Ambiguous reference in cref attribute
 #pragma warning disable 419
 
-namespace Pgn.Compiler {
+namespace NgpCompiler.Generated {
 using Antlr4.Runtime.Misc;
 using Antlr4.Runtime.Tree;
 using IToken = Antlr4.Runtime.IToken;
@@ -51,4 +51,4 @@ public interface IPgnVisitor<Result> : IParseTreeVisitor<Result> {
 	/// <return>The visitor result.</return>
 	Result VisitAttrs([NotNull] PgnParser.AttrsContext context);
 }
-} // namespace Pgn.Compiler
+} // namespace NgpCompiler.Generated

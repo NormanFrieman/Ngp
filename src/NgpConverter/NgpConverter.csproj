@@ -4,11 +4,15 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <PackageId>NormanFrieman.PgnConverter</PackageId>
+    <PackageId>NormanFrieman.Ngp</PackageId>
     <Version>1.0.2</Version>
     <Author>NormanFrieman</Author>
-    <Product>PgnConverter</Product>
-    <RepositoryUrl>https://github.com/NormanFrieman/pgn_converter</RepositoryUrl>
+    <Product>Ngp</Product>
+    <RepositoryUrl>https://github.com/NormanFrieman/ngp</RepositoryUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NgpCompiler\NgpCompiler.csproj" />
+  </ItemGroup>
 
 </Project>

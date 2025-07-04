@@ -1,16 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
     <Antlr4 Include="Pgn.g4">
-      <Package>Pgn.Compiler</Package>
-      <Listener>True</Listener>
+      <Package>NgpCompiler.Generated</Package>
+      <Listener>false</Listener>
       <Error>false</Error>
       <Visitor>True</Visitor>
-      <AntOutDir>..\Pgn.Compiler.GeneratedCode</AntOutDir>
+      <AntOutDir>Generated</AntOutDir>
     </Antlr4>
   </ItemGroup>
   

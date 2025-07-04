@@ -11,12 +11,33 @@ info:
 ;
 
 attrs:
-    EVENT | SITE | DATE | ROUND
-    | WHITE | BLACK | WHITEELO | BLACKELO | WHITETITLE | BLACKTITLE
-    | RESULT | GAMEID | VARIANT | TIMECONTROL | ECO | OPENING | TERMINATION | ANNOTATOR
+    EVENT
+    | SITE
+    | DATE
+    | ROUND
+    | WHITE
+    | BLACK
+    | WHITEELO
+    | BLACKELO
+    | WHITETITLE
+    | BLACKTITLE
+    | RESULT
+    | GAMEID
+    | VARIANT
+    | TIMECONTROL
+    | ECO
+    | OPENING
+    | TERMINATION
+    | ANNOTATOR
+    | WHITEFIDEID
+    | BLACKFIDEID
+    | STUDYNAME
+    | CHAPTERNAME
 ;
 
 // LEXER
+
+WS : [ \t\r\n]+ -> skip ;
 
 EVENT : 'Event' ;
 SITE : 'Site' ;
@@ -39,6 +60,12 @@ OPENING : 'Opening' ;
 
 TERMINATION : 'Termination' ;
 ANNOTATOR : 'Annotator' ;
+
+WHITEFIDEID : 'WhiteFideId' ;
+BLACKFIDEID : 'BlackFideId' ;
+
+STUDYNAME : 'StudyName' ;
+CHAPTERNAME : 'ChapterName' ;
 
 LBRACE : '[' ;
 RBRACE : ']' ;

@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\Pgn.Converter\Pgn.Converter.csproj" />
+    <ProjectReference Include="..\src\NgpConverter\NgpConverter.csproj" />
   </ItemGroup>
 
 </Project>

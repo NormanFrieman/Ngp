@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generated from C:/Users/Ezequiel Demetras/Documents/Projetos/PgnConverter/src/Pgn.Compiler/Pgn.g4 by ANTLR 4.13.1
+// Generated from C:/Users/Ezequiel Demetras/Documents/Projetos/Ngp/src/NgpCompiler/Pgn.g4 by ANTLR 4.13.1
 
 // Unreachable code detected
 #pragma warning disable 0162
@@ -19,7 +19,7 @@
 // Ambiguous reference in cref attribute
 #pragma warning disable 419
 
-namespace Pgn.Compiler {
+namespace NgpCompiler.Generated {
 using System;
 using System.IO;
 using System.Text;
@@ -37,10 +37,11 @@ public partial class PgnParser : Parser {
 	protected static DFA[] decisionToDFA;
 	protected static PredictionContextCache sharedContextCache = new PredictionContextCache();
 	public const int
-		EVENT=1, SITE=2, DATE=3, ROUND=4, WHITE=5, BLACK=6, WHITEELO=7, BLACKELO=8, 
-		WHITETITLE=9, BLACKTITLE=10, RESULT=11, GAMEID=12, VARIANT=13, TIMECONTROL=14, 
-		ECO=15, OPENING=16, TERMINATION=17, ANNOTATOR=18, LBRACE=19, RBRACE=20, 
-		STRING_VALUE=21, ANALYSIS=22;
+		WS=1, EVENT=2, SITE=3, DATE=4, ROUND=5, WHITE=6, BLACK=7, WHITEELO=8, 
+		BLACKELO=9, WHITETITLE=10, BLACKTITLE=11, RESULT=12, GAMEID=13, VARIANT=14, 
+		TIMECONTROL=15, ECO=16, OPENING=17, TERMINATION=18, ANNOTATOR=19, WHITEFIDEID=20, 
+		BLACKFIDEID=21, STUDYNAME=22, CHAPTERNAME=23, LBRACE=24, RBRACE=25, STRING_VALUE=26, 
+		ANALYSIS=27;
 	public const int
 		RULE_pgn_info = 0, RULE_info = 1, RULE_attrs = 2;
 	public static readonly string[] ruleNames = {
@@ -48,16 +49,18 @@ public partial class PgnParser : Parser {
 	};
 
 	private static readonly string[] _LiteralNames = {
-		null, "'Event'", "'Site'", "'Date'", "'Round'", "'White'", "'Black'", 
+		null, null, "'Event'", "'Site'", "'Date'", "'Round'", "'White'", "'Black'", 
 		"'WhiteElo'", "'BlackElo'", "'WhiteTitle'", "'BlackTitle'", "'Result'", 
 		"'GameId'", "'Variant'", "'TimeControl'", "'ECO'", "'Opening'", "'Termination'", 
-		"'Annotator'", "'['", "']'"
+		"'Annotator'", "'WhiteFideId'", "'BlackFideId'", "'StudyName'", "'ChapterName'", 
+		"'['", "']'"
 	};
 	private static readonly string[] _SymbolicNames = {
-		null, "EVENT", "SITE", "DATE", "ROUND", "WHITE", "BLACK", "WHITEELO", 
+		null, "WS", "EVENT", "SITE", "DATE", "ROUND", "WHITE", "BLACK", "WHITEELO", 
 		"BLACKELO", "WHITETITLE", "BLACKTITLE", "RESULT", "GAMEID", "VARIANT", 
-		"TIMECONTROL", "ECO", "OPENING", "TERMINATION", "ANNOTATOR", "LBRACE", 
-		"RBRACE", "STRING_VALUE", "ANALYSIS"
+		"TIMECONTROL", "ECO", "OPENING", "TERMINATION", "ANNOTATOR", "WHITEFIDEID", 
+		"BLACKFIDEID", "STUDYNAME", "CHAPTERNAME", "LBRACE", "RBRACE", "STRING_VALUE", 
+		"ANALYSIS"
 	};
 	public static readonly IVocabulary DefaultVocabulary = new Vocabulary(_LiteralNames, _SymbolicNames);
 
@@ -103,16 +106,6 @@ public partial class PgnParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_pgn_info; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IPgnListener typedListener = listener as IPgnListener;
-			if (typedListener != null) typedListener.EnterPgn_info(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IPgnListener typedListener = listener as IPgnListener;
-			if (typedListener != null) typedListener.ExitPgn_info(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IPgnVisitor<TResult> typedVisitor = visitor as IPgnVisitor<TResult>;
@@ -169,16 +162,6 @@ public partial class PgnParser : Parser {
 		}
 		public override int RuleIndex { get { return RULE_info; } }
 		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IPgnListener typedListener = listener as IPgnListener;
-			if (typedListener != null) typedListener.EnterInfo(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IPgnListener typedListener = listener as IPgnListener;
-			if (typedListener != null) typedListener.ExitInfo(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IPgnVisitor<TResult> typedVisitor = visitor as IPgnVisitor<TResult>;
 			if (typedVisitor != null) return typedVisitor.VisitInfo(this);
@@ -233,21 +216,15 @@ public partial class PgnParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OPENING() { return GetToken(PgnParser.OPENING, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode TERMINATION() { return GetToken(PgnParser.TERMINATION, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode ANNOTATOR() { return GetToken(PgnParser.ANNOTATOR, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode WHITEFIDEID() { return GetToken(PgnParser.WHITEFIDEID, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode BLACKFIDEID() { return GetToken(PgnParser.BLACKFIDEID, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STUDYNAME() { return GetToken(PgnParser.STUDYNAME, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CHAPTERNAME() { return GetToken(PgnParser.CHAPTERNAME, 0); }
 		public AttrsContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_attrs; } }
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void EnterRule(IParseTreeListener listener) {
-			IPgnListener typedListener = listener as IPgnListener;
-			if (typedListener != null) typedListener.EnterAttrs(this);
-		}
-		[System.Diagnostics.DebuggerNonUserCode]
-		public override void ExitRule(IParseTreeListener listener) {
-			IPgnListener typedListener = listener as IPgnListener;
-			if (typedListener != null) typedListener.ExitAttrs(this);
-		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
 			IPgnVisitor<TResult> typedVisitor = visitor as IPgnVisitor<TResult>;
@@ -266,7 +243,7 @@ public partial class PgnParser : Parser {
 			{
 			State = 17;
 			_la = TokenStream.LA(1);
-			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & 524286L) != 0)) ) {
+			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & 16777212L) != 0)) ) {
 			ErrorHandler.RecoverInline(this);
 			}
 			else {
@@ -287,11 +264,11 @@ public partial class PgnParser : Parser {
 	}
 
 	private static int[] _serializedATN = {
-		4,1,22,20,2,0,7,0,2,1,7,1,2,2,7,2,1,0,5,0,8,8,0,10,0,12,0,11,9,0,1,1,1,
-		1,1,1,1,1,1,1,1,2,1,2,1,2,0,0,3,0,2,4,0,1,1,0,1,18,17,0,9,1,0,0,0,2,12,
+		4,1,27,20,2,0,7,0,2,1,7,1,2,2,7,2,1,0,5,0,8,8,0,10,0,12,0,11,9,0,1,1,1,
+		1,1,1,1,1,1,1,1,2,1,2,1,2,0,0,3,0,2,4,0,1,1,0,2,23,17,0,9,1,0,0,0,2,12,
 		1,0,0,0,4,17,1,0,0,0,6,8,3,2,1,0,7,6,1,0,0,0,8,11,1,0,0,0,9,7,1,0,0,0,
-		9,10,1,0,0,0,10,1,1,0,0,0,11,9,1,0,0,0,12,13,5,19,0,0,13,14,3,4,2,0,14,
-		15,5,21,0,0,15,16,5,20,0,0,16,3,1,0,0,0,17,18,7,0,0,0,18,5,1,0,0,0,1,9
+		9,10,1,0,0,0,10,1,1,0,0,0,11,9,1,0,0,0,12,13,5,24,0,0,13,14,3,4,2,0,14,
+		15,5,26,0,0,15,16,5,25,0,0,16,3,1,0,0,0,17,18,7,0,0,0,18,5,1,0,0,0,1,9
 	};
 
 	public static readonly ATN _ATN =
@@ -299,4 +276,4 @@ public partial class PgnParser : Parser {
 
 
 }
-} // namespace Pgn.Compiler
+} // namespace NgpCompiler.Generated

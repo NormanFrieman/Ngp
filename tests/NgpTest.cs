@@ -1,14 +1,14 @@
-using PgnConverterProject;
+using NgpConverter;
 
-namespace PgnConverterTest
+namespace NgpTest
 {
-    public class PgnConverterTest
+    public class NgpTest
     {
         [Fact]
         public void Convert_Success()
         {
             // Act
-            var pgn = PgnConverter.Convert(pgnStr).Single();
+            var pgn = Ngp.Convert(pgnStr).Single();
 
             // Assert
             Assert.Equal("Round 2: Dardha, Daniel - Bettalli, Francesco", pgn.Event);

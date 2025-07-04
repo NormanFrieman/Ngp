@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pgn.Converter", "src\Pgn.Converter\Pgn.Converter.csproj", "{C991164D-3755-49AD-852E-01AFBA8CA360}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NgpConverter", "src\NgpConverter\NgpConverter.csproj", "{C991164D-3755-49AD-852E-01AFBA8CA360}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pgn.Converter.Test", "tests\Pgn.Converter.Test.csproj", "{B4688E71-5AD4-4C84-AE1B-D9F972345FAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NgpTest", "tests\NgpTest.csproj", "{B4688E71-5AD4-4C84-AE1B-D9F972345FAD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pgn.Compiler", "src\Pgn.Compiler\Pgn.Compiler.csproj", "{52195F18-84AF-4E99-8DF6-8737E83AC527}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NgpCompiler", "src\NgpCompiler\NgpCompiler.csproj", "{52195F18-84AF-4E99-8DF6-8737E83AC527}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pgn.Compiler.GeneratedCode", "src\Pgn.Compiler.GeneratedCode\Pgn.Compiler.GeneratedCode.csproj", "{008D97A5-2FE9-4F8D-AABE-C4143BD529B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NgpPlayground", "src\NgpPlayground\NgpPlayground.csproj", "{7B5073EB-F7E4-4713-B137-8BE6C70CB84E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9415B150-3ACC-4242-9EFE-05E685814BCB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{44B9F7E8-C089-4216-9BBA-85C9EC63E659}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,13 +33,20 @@ Global
 		{52195F18-84AF-4E99-8DF6-8737E83AC527}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52195F18-84AF-4E99-8DF6-8737E83AC527}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52195F18-84AF-4E99-8DF6-8737E83AC527}.Release|Any CPU.Build.0 = Release|Any CPU
-		{008D97A5-2FE9-4F8D-AABE-C4143BD529B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{008D97A5-2FE9-4F8D-AABE-C4143BD529B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{008D97A5-2FE9-4F8D-AABE-C4143BD529B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{008D97A5-2FE9-4F8D-AABE-C4143BD529B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B5073EB-F7E4-4713-B137-8BE6C70CB84E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B5073EB-F7E4-4713-B137-8BE6C70CB84E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B5073EB-F7E4-4713-B137-8BE6C70CB84E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B5073EB-F7E4-4713-B137-8BE6C70CB84E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C991164D-3755-49AD-852E-01AFBA8CA360} = {9415B150-3ACC-4242-9EFE-05E685814BCB}
+		{B4688E71-5AD4-4C84-AE1B-D9F972345FAD} = {44B9F7E8-C089-4216-9BBA-85C9EC63E659}
+		{52195F18-84AF-4E99-8DF6-8737E83AC527} = {9415B150-3ACC-4242-9EFE-05E685814BCB}
+		{008D97A5-2FE9-4F8D-AABE-C4143BD529B2} = {9415B150-3ACC-4242-9EFE-05E685814BCB}
+		{7B5073EB-F7E4-4713-B137-8BE6C70CB84E} = {9415B150-3ACC-4242-9EFE-05E685814BCB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6C1A6D71-54E0-47F8-AD5D-AA1C4DE10454}
