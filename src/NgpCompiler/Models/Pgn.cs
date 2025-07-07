@@ -12,12 +12,14 @@ namespace NgpCompiler.Models
         public string Black { get; set; }
         public string Result { get; set; }
         public string GameId { get; set; }
+
         public string WhiteElo { get; set; }
         public string WhiteTitle { get; set; }
         public string WhiteFideId { get; set; }
         public string BlackElo { get; set; }
         public string BlackTitle { get; set; }
         public string BlackFideId { get; set; }
+
         public string Variant { get; set; }
         public string Opening { get; set; }
 
