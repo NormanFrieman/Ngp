@@ -1,5 +1,4 @@
-﻿using NgpCompiler;
-using NgpCompiler.Models;
+﻿using NgpConverter.Models;
 
 namespace NgpConverter
 {

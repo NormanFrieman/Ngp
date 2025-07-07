@@ -1,12 +1,9 @@
 ﻿using Antlr4.Runtime;
-using NgpCompiler.Generated;
-using NgpCompiler.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using NgpConverter.Generated;
+using NgpConverter.Models;
 using System.Text.RegularExpressions;
 
-namespace NgpCompiler
+namespace NgpConverter
 {
     public static class PgnCompiler
     {

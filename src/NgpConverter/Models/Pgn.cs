@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace NgpCompiler.Models
+﻿namespace NgpConverter.Models
 {
     public class Pgn
     {

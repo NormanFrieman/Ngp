@@ -12,7 +12,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NgpCompiler\NgpCompiler.csproj" />
+    <Antlr4 Include="Pgn.g4">
+      <Package>NgpConverter.Generated</Package>
+      <Listener>false</Listener>
+      <Error>false</Error>
+      <Visitor>True</Visitor>
+      <AntOutDir>Generated</AntOutDir>
+    </Antlr4>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Antlr4.Runtime.Standard" Version="4.13.1" />
+    <PackageReference Include="Antlr4BuildTasks" Version="12.10.0" />
   </ItemGroup>
 
 </Project>

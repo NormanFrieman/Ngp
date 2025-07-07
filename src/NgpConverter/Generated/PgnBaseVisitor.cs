@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generated from C:/Users/Ezequiel Demetras/Documents/Projetos/Ngp/src/NgpCompiler/Pgn.g4 by ANTLR 4.13.1
+// Generated from C:/Users/AEVO-EZEQUIEL/Documents/projetos/Ngp/src/NgpConverter/Pgn.g4 by ANTLR 4.13.1
 
 // Unreachable code detected
 #pragma warning disable 0162
@@ -19,36 +19,51 @@
 // Ambiguous reference in cref attribute
 #pragma warning disable 419
 
-namespace NgpCompiler.Generated {
+namespace NgpConverter.Generated {
 using Antlr4.Runtime.Misc;
 using Antlr4.Runtime.Tree;
 using IToken = Antlr4.Runtime.IToken;
+using ParserRuleContext = Antlr4.Runtime.ParserRuleContext;
 
 /// <summary>
-/// This interface defines a complete generic visitor for a parse tree produced
-/// by <see cref="PgnParser"/>.
+/// This class provides an empty implementation of <see cref="IPgnVisitor{Result}"/>,
+/// which can be extended to create a visitor which only needs to handle a subset
+/// of the available methods.
 /// </summary>
 /// <typeparam name="Result">The return type of the visit operation.</typeparam>
 [System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.13.1")]
+[System.Diagnostics.DebuggerNonUserCode]
 [System.CLSCompliant(false)]
-public interface IPgnVisitor<Result> : IParseTreeVisitor<Result> {
+public partial class PgnBaseVisitor<Result> : AbstractParseTreeVisitor<Result>, IPgnVisitor<Result> {
 	/// <summary>
 	/// Visit a parse tree produced by <see cref="PgnParser.pgn_info"/>.
+	/// <para>
+	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
+	/// on <paramref name="context"/>.
+	/// </para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitPgn_info([NotNull] PgnParser.Pgn_infoContext context);
+	public virtual Result VisitPgn_info([NotNull] PgnParser.Pgn_infoContext context) { return VisitChildren(context); }
 	/// <summary>
 	/// Visit a parse tree produced by <see cref="PgnParser.info"/>.
+	/// <para>
+	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
+	/// on <paramref name="context"/>.
+	/// </para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitInfo([NotNull] PgnParser.InfoContext context);
+	public virtual Result VisitInfo([NotNull] PgnParser.InfoContext context) { return VisitChildren(context); }
 	/// <summary>
 	/// Visit a parse tree produced by <see cref="PgnParser.attrs"/>.
+	/// <para>
+	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
+	/// on <paramref name="context"/>.
+	/// </para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitAttrs([NotNull] PgnParser.AttrsContext context);
+	public virtual Result VisitAttrs([NotNull] PgnParser.AttrsContext context) { return VisitChildren(context); }
 }
-} // namespace NgpCompiler.Generated
+} // namespace NgpConverter.Generated
