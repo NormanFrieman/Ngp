@@ -7,19 +7,32 @@ namespace NgpConverter
 {
     public static class PgnCompiler
     {
-        private static readonly string removeTimeRegex = "\\{\\s*\\[\\%.*?\\]\\s*\\}";
-        private static readonly string pgnBlock = @"(?=\[Event\s+"".*?""\])((?:\[[^\]]+\]\r?\n?)*?(?:\r?\n)+((?:\d+\..*?)(?=\r?\n\r?\n|\[Event\s+|$))?)";
+        private static readonly string _removeBrace = "\\{[^{}]*\\}|\\([^()]*\\)";
+        private static readonly string _removeParen = "[!?]";
+
+        private static readonly string _pgnBlock = @"(?=\[Event\s+"".*?""\])((?:\[[^\]]+\]\r?\n?)*?(?:\r?\n)+((?:\d+\..*?)(?=\r?\n\r?\n|\[Event\s+|$))?)";
+        
+        private static readonly string _movesUnique = "(?:\\[\\w+ \\\"[^\\\"]*\\\"\\]\\s*)+\\s*(.*)";
+        private static readonly string _movesMultiple = "\\b(?:[KQRBN]?[a-h]?[1-8]?x?[a-h][1-8]|O-O(?:-O)?)\\+?#?\\b";
 
         public static Pgn[] Compile(string pgnStr)
         {
             try
             {
-                var pgnClean = Regex.Replace(pgnStr, removeTimeRegex, "");
-                var matches = Regex.Matches(pgnClean, pgnBlock, RegexOptions.Singleline);
+                var pgnWithoutBrace = Regex.Replace(pgnStr, _removeBrace, "");
+                var pgnClean = Regex.Replace(pgnWithoutBrace, _removeParen, "");
+                var matches = Regex.Matches(pgnClean, _pgnBlock, RegexOptions.Singleline);
 
                 var pgns = new List<Pgn>();
                 foreach (Match match in matches)
                 {
+                    var movesUnique = Regex.Match(pgnClean, _movesUnique)
+                        .Groups[1]
+                        .Value;
+                    var movesMultiple = Regex.Matches(movesUnique, _movesMultiple, RegexOptions.Singleline)
+                        .Select(x => x.Groups[0].Value)
+                        .ToArray();
+
                     var antlrInput = new AntlrInputStream(match.Value);
                     var lexer = new PgnLexer(antlrInput);
                     var tokens = new CommonTokenStream(lexer);
@@ -32,6 +45,7 @@ namespace NgpConverter
 
                     var pgn = checker.Pgn;
                     pgn.PgnView = match.Value;
+                    pgn.Moves = movesMultiple;
 
                     pgns.Add(checker.Pgn);
                 }
