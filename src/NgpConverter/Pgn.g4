@@ -33,6 +33,9 @@ attrs:
     | BLACKFIDEID
     | STUDYNAME
     | CHAPTERNAME
+    | UTCDATE
+    | UTCTIME
+    | GAMEURL
 ;
 
 // LEXER
@@ -66,6 +69,10 @@ BLACKFIDEID : 'BlackFideId' ;
 
 STUDYNAME : 'StudyName' ;
 CHAPTERNAME : 'ChapterName' ;
+
+UTCDATE : 'UTCDate' ;
+UTCTIME : 'UTCTime' ;
+GAMEURL : 'GameURL' ;
 
 LBRACE : '[' ;
 RBRACE : ']' ;

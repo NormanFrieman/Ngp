@@ -40,8 +40,8 @@ public partial class PgnParser : Parser {
 		WS=1, EVENT=2, SITE=3, DATE=4, ROUND=5, WHITE=6, BLACK=7, WHITEELO=8, 
 		BLACKELO=9, WHITETITLE=10, BLACKTITLE=11, RESULT=12, GAMEID=13, VARIANT=14, 
 		TIMECONTROL=15, ECO=16, OPENING=17, TERMINATION=18, ANNOTATOR=19, WHITEFIDEID=20, 
-		BLACKFIDEID=21, STUDYNAME=22, CHAPTERNAME=23, LBRACE=24, RBRACE=25, STRING_VALUE=26, 
-		ANALYSIS=27, MOVES=28;
+		BLACKFIDEID=21, STUDYNAME=22, CHAPTERNAME=23, UTCDATE=24, UTCTIME=25, 
+		GAMEURL=26, LBRACE=27, RBRACE=28, STRING_VALUE=29, ANALYSIS=30, MOVES=31;
 	public const int
 		RULE_pgn_info = 0, RULE_info = 1, RULE_attrs = 2;
 	public static readonly string[] ruleNames = {
@@ -53,14 +53,14 @@ public partial class PgnParser : Parser {
 		"'WhiteElo'", "'BlackElo'", "'WhiteTitle'", "'BlackTitle'", "'Result'", 
 		"'GameId'", "'Variant'", "'TimeControl'", "'ECO'", "'Opening'", "'Termination'", 
 		"'Annotator'", "'WhiteFideId'", "'BlackFideId'", "'StudyName'", "'ChapterName'", 
-		"'['", "']'"
+		"'UTCDate'", "'UTCTime'", "'GameURL'", "'['", "']'"
 	};
 	private static readonly string[] _SymbolicNames = {
 		null, "WS", "EVENT", "SITE", "DATE", "ROUND", "WHITE", "BLACK", "WHITEELO", 
 		"BLACKELO", "WHITETITLE", "BLACKTITLE", "RESULT", "GAMEID", "VARIANT", 
 		"TIMECONTROL", "ECO", "OPENING", "TERMINATION", "ANNOTATOR", "WHITEFIDEID", 
-		"BLACKFIDEID", "STUDYNAME", "CHAPTERNAME", "LBRACE", "RBRACE", "STRING_VALUE", 
-		"ANALYSIS", "MOVES"
+		"BLACKFIDEID", "STUDYNAME", "CHAPTERNAME", "UTCDATE", "UTCTIME", "GAMEURL", 
+		"LBRACE", "RBRACE", "STRING_VALUE", "ANALYSIS", "MOVES"
 	};
 	public static readonly IVocabulary DefaultVocabulary = new Vocabulary(_LiteralNames, _SymbolicNames);
 
@@ -220,6 +220,9 @@ public partial class PgnParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode BLACKFIDEID() { return GetToken(PgnParser.BLACKFIDEID, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STUDYNAME() { return GetToken(PgnParser.STUDYNAME, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CHAPTERNAME() { return GetToken(PgnParser.CHAPTERNAME, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode UTCDATE() { return GetToken(PgnParser.UTCDATE, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode UTCTIME() { return GetToken(PgnParser.UTCTIME, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode GAMEURL() { return GetToken(PgnParser.GAMEURL, 0); }
 		public AttrsContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
@@ -243,7 +246,7 @@ public partial class PgnParser : Parser {
 			{
 			State = 17;
 			_la = TokenStream.LA(1);
-			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & 16777212L) != 0)) ) {
+			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & 134217724L) != 0)) ) {
 			ErrorHandler.RecoverInline(this);
 			}
 			else {
@@ -264,11 +267,11 @@ public partial class PgnParser : Parser {
 	}
 
 	private static int[] _serializedATN = {
-		4,1,28,20,2,0,7,0,2,1,7,1,2,2,7,2,1,0,5,0,8,8,0,10,0,12,0,11,9,0,1,1,1,
-		1,1,1,1,1,1,1,1,2,1,2,1,2,0,0,3,0,2,4,0,1,1,0,2,23,17,0,9,1,0,0,0,2,12,
+		4,1,31,20,2,0,7,0,2,1,7,1,2,2,7,2,1,0,5,0,8,8,0,10,0,12,0,11,9,0,1,1,1,
+		1,1,1,1,1,1,1,1,2,1,2,1,2,0,0,3,0,2,4,0,1,1,0,2,26,17,0,9,1,0,0,0,2,12,
 		1,0,0,0,4,17,1,0,0,0,6,8,3,2,1,0,7,6,1,0,0,0,8,11,1,0,0,0,9,7,1,0,0,0,
-		9,10,1,0,0,0,10,1,1,0,0,0,11,9,1,0,0,0,12,13,5,24,0,0,13,14,3,4,2,0,14,
-		15,5,26,0,0,15,16,5,25,0,0,16,3,1,0,0,0,17,18,7,0,0,0,18,5,1,0,0,0,1,9
+		9,10,1,0,0,0,10,1,1,0,0,0,11,9,1,0,0,0,12,13,5,27,0,0,13,14,3,4,2,0,14,
+		15,5,29,0,0,15,16,5,28,0,0,16,3,1,0,0,0,17,18,7,0,0,0,18,5,1,0,0,0,1,9
 	};
 
 	public static readonly ATN _ATN =

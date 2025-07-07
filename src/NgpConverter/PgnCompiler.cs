@@ -26,7 +26,7 @@ namespace NgpConverter
                 var pgns = new List<Pgn>();
                 foreach (Match match in matches)
                 {
-                    var movesUnique = Regex.Match(pgnClean, _movesUnique)
+                    var movesUnique = Regex.Match(match.Value, _movesUnique)
                         .Groups[1]
                         .Value;
                     var movesMultiple = Regex.Matches(movesUnique, _movesMultiple, RegexOptions.Singleline)
