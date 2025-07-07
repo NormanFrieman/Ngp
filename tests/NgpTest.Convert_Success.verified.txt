@@ -1,21 +1,114 @@
 ﻿[
   {
-    Event: "Chessable Masters Final",
-    Site: "chess24.com INT",
-    Date: "2020.06.27",
-    Round: "1.23",
-    White: "Caruana, Fabiano",
-    Black: "Carlsen, Magnus",
-    Result: "0-1",
-    GameId: "cOKsoa1P",
-    WhiteElo: "2835",
-    BlackElo: "2863",
+    Event: "Saint Louis Rapid 2019",
+    Site: "Saint Louis USA",
+    Date: "2019.08.11",
+    Round: "4.1",
+    White: "Caruana, F.",
+    Black: "Carlsen, M.",
+    Result: "1-0",
+    GameId: "boLujJkB",
+    WhiteElo: "2818",
+    BlackElo: "2882",
     Variant: "Standard",
-    Opening: "Nimzo-Indian Defense: Sämisch Variation, Keres Variation",
+    Opening: "Sicilian Defense: Nyezhmetdinov-Rossolimo Attack",
     TimeControl: "-",
-    ECO: "E25",
+    ECO: "B30",
     Termination: "Normal",
-    Annotator: "lichess.org"
+    Annotator: "lichess.org",
+    PgnView:
+[Event "Saint Louis Rapid 2019"]
+[Site "Saint Louis USA"]
+[Date "2019.08.11"]
+[Round "4.1"]
+[White "Caruana, F."]
+[Black "Carlsen, M."]
+[Result "1-0"]
+[GameId "boLujJkB"]
+[WhiteElo "2818"]
+[BlackElo "2882"]
+[Variant "Standard"]
+[TimeControl "-"]
+[ECO "B30"]
+[Opening "Sicilian Defense: Nyezhmetdinov-Rossolimo Attack"]
+[Termination "Normal"]
+[Annotator "lichess.org"]
+
+1. e4  1... c5  2. Nf3  2... Nc6  3. Bb5  { B30 Sicilian Defense: Nyezhmetdinov-Rossolimo Attack } 3... e6  4. Bxc6  4... bxc6  5. d3  5... Ne7  6. b3  6... Ng6  7. h4  7... h5  8. e5  8... f6  9. Nbd2  9... d6  10. exd6  10... e5  11. Bb2  11... Bg4  12. Qe2  12... Qxd6  13. g3  13... Be7  14. O-O-O?! { (0.58 → -0.09) Inaccuracy. Qe4 was best. }  (14. Qe4 Nf8) 14... Nf8?! { (-0.09 → 0.87) Inaccuracy. Qd5 was best. }  (14... Qd5 15. Qe3) 15. Rde1  15... Ne6?! { (0.70 → 1.35) Inaccuracy. Qd5 was best. }  (15... Qd5 16. Qe3) 16. Qe4  16... Qd5  17. Nxe5  17... Qxe4  18. dxe4  18... fxe5  19. f3  19... Nd4  20. fxg4  20... hxg4  21. Nc4  21... O-O  22. Kb1  22... Rf2  23. Nxe5  23... Nxc2  24. Nxg4  24... Rg2  25. Reg1  25... Re2  26. h5  26... c4? { (1.14 → 2.40) Mistake. Rxe4 was best. }  (26... Rxe4 27. Kxc2) 27. h6  27... c3?? { (2.25 → 5.09) Blunder. Na3+ was best. }  (27... Na3+ 28. Bxa3 Bxa3 29. h7+ Kh8 30. Ne5 g6 31. Nxg6+ Kg7 32. h8=Q+ Rxh8 33. Nxh8 c3 34. Rc1) 28. h7+  28... Kf7  29. Rf1+  29... Bf6? { (3.81 → 7.05) Mistake. Ke6 was best. }  (29... Ke6 30. Rf2 Na3+ 31. Bxa3 c2+ 32. Kb2 c1=R+ 33. Kxc1 Bxa3+ 34. Kd1 Rxf2 35. Nxf2 Rh8 36. Nd3) 30. Bc1  30... Nb4  31. e5  31... Rxa2  32. Ne3  32... Rh8  33. exf6  33... g5  34. Rd1  34... a5  35. Rd4  35... c2+  36. Nxc2  36... Rxc2  37. Rxb4  37... Rxc1+  38. Kxc1  38... axb4  39. Rh6  { Black resigns. } 1-0
+  },
+  {
+    Event: "Saint Louis Blitz 2019",
+    Site: "Saint Louis USA",
+    Date: "2019.08.14",
+    Round: "14.5",
+    White: "Caruana, F.",
+    Black: "Carlsen, M.",
+    Result: "1-0",
+    GameId: "Sxov6E94",
+    WhiteElo: "2818",
+    BlackElo: "2882",
+    Variant: "Standard",
+    Opening: "Ruy Lopez: Schliemann Defense",
+    TimeControl: "-",
+    ECO: "C63",
+    Termination: "Normal",
+    Annotator: "lichess.org",
+    PgnView:
+[Event "Saint Louis Blitz 2019"]
+[Site "Saint Louis USA"]
+[Date "2019.08.14"]
+[Round "14.5"]
+[White "Caruana, F."]
+[Black "Carlsen, M."]
+[Result "1-0"]
+[GameId "Sxov6E94"]
+[WhiteElo "2818"]
+[BlackElo "2882"]
+[Variant "Standard"]
+[TimeControl "-"]
+[ECO "C63"]
+[Opening "Ruy Lopez: Schliemann Defense"]
+[Termination "Normal"]
+[Annotator "lichess.org"]
+
+1. e4  1... e5  2. Nf3  2... Nc6  3. Bb5  3... f5  { C63 Ruy Lopez: Schliemann Defense } 4. d3  4... fxe4  5. dxe4  5... Nf6  6. O-O  6... d6  7. Bc4  7... Bg4  8. h3  8... Bh5  9. Nc3  9... Qd7  10. Be3  10... Be7  11. a4  11... Rf8  12. Be2  12... Bxf3  13. Bxf3  13... Kf7  14. Nd5  14... Kg8  15. a5  15... a6  16. c3  16... Kh8  17. Qb3  17... Nd8  18. Rad1  18... Nxd5  19. Bg4  19... Qb5  20. Qxd5  20... Qxb2?! { (0.88 → 1.95) Inaccuracy. Qxd5 was best. }  (20... Qxd5 21. Rxd5) 21. Qc4  21... c6  22. Rb1  22... Qa3  23. Bb6  23... Nf7?! { (1.92 → 2.59) Inaccuracy. Rf4 was best. }  (23... Rf4 24. Qd3) 24. Ra1  24... Qb2  25. Rfb1  25... d5?? { (2.07 → 6.18) Blunder. Qc2 was best. }  (25... Qc2 26. Rc1 Qd2 27. Be3 d5 28. Qb3 Qd3 29. exd5 Qxd5 30. Qxb7 Bg5 31. Rd1 Qc4 32. Qb6) 26. Qd3  26... dxe4  27. Qd7  27... Qxc3  28. Qxe7  28... Nh6  29. Be3  29... Rf7  30. Qe6  30... Raf8  31. Ra2  31... Nxg4  32. hxg4?! { (5.34 → 3.74) Inaccuracy. Qxg4 was best. }  (32. Qxg4) 32... Qd3  33. Qb3  33... Qd7?! { (3.74 → 5.64) Inaccuracy. Qxb3 was best. }  (33... Qxb3 34. Rxb3) 34. Qd1?! { (5.64 → 4.13) Inaccuracy. Rd2 was best. }  (34. Rd2) 34... Qe6?! { (4.13 → 5.47) Inaccuracy. Qd8 was best. }  (34... Qd8) 35. Rd2  35... h6  36. Rbb2  36... Kh7  37. Rd6  37... Qe7  38. g5  38... hxg5  39. Rbd2  39... Kg8  40. Qg4  40... Qc7?! { (5.73 → 9.03) Inaccuracy. Rf4 was best. }  (40... Rf4 41. Rd7) 41. Bb6? { (9.03 → 4.52) Mistake. Rd7 was best. }  (41. Rd7) 41... Qe7?! { (4.52 → 6.88) Inaccuracy. Qc8 was best. }  (41... Qc8) 42. Be3  42... Qc7?! { (5.55 → 8.89) Inaccuracy. Rf4 was best. }  (42... Rf4 43. Rd7) 43. Rd7  43... Qc8  44. Qe6  44... c5  45. Qc4  45... Qe8  46. Rxb7  46... Kh7  47. Rxf7  47... Rxf7  48. Qxa6  48... Qa4  49. Qe6  49... Qa1+  50. Kh2  50... Rf6  51. Qg4  51... Qxa5  52. Qxe4+  52... Kh6?! { (10.52 → Mate in 6) Checkmate is now unavoidable. Kg8 was best. }  (52... Kg8 53. Bxg5) 53. Qh4+  53... Kg6  54. Qxg5+  54... Kh7  55. Qh5+?! { (Mate in 4 → 60.21) Lost forced checkmate sequence. Rd7 was best. }  (55. Rd7 Rg6 56. Qh5+ Kg8 57. Qxg6 Kf8 58. Qf7#) 55... Kg8  56. Qe8+  56... Kh7  57. Rd8  57... Rf5?! { (14.46 → Mate in 9) Checkmate is now unavoidable. Qxd8 was best. }  (57... Qxd8) 58. Qg8+  58... Kg6  59. Rd6+  59... Rf6  60. Qe8+  60... Kf5  61. Qh5+  61... Ke4  62. Qg4+  { Black resigns. } 1-0
+  },
+  {
+    Event: "7th Sinquefield Cup 2019",
+    Site: "Saint Louis USA",
+    Date: "2019.08.19",
+    Round: "3.2",
+    White: "Carlsen, M.",
+    Black: "Caruana, F.",
+    Result: "1/2-1/2",
+    GameId: "QR5UbqUY",
+    WhiteElo: "2882",
+    BlackElo: "2818",
+    Variant: "Standard",
+    Opening: "Queen's Gambit Accepted",
+    TimeControl: "-",
+    ECO: "D24",
+    Termination: "Normal",
+    Annotator: "lichess.org",
+    PgnView:
+[Event "7th Sinquefield Cup 2019"]
+[Site "Saint Louis USA"]
+[Date "2019.08.19"]
+[Round "3.2"]
+[White "Carlsen, M."]
+[Black "Caruana, F."]
+[Result "1/2-1/2"]
+[GameId "QR5UbqUY"]
+[WhiteElo "2882"]
+[BlackElo "2818"]
+[Variant "Standard"]
+[TimeControl "-"]
+[ECO "D24"]
+[Opening "Queen's Gambit Accepted"]
+[Termination "Normal"]
+[Annotator "lichess.org"]
+
+1. d4  1... Nf6  2. c4  2... e6  3. Nf3  3... d5  4. Nc3  4... dxc4  5. e4  { D24 Queen's Gambit Accepted } 5... Bb4  6. Bxc4  6... Nxe4  7. O-O  7... Nf6  8. Qa4+  8... Nc6  9. Ne5  9... Bd6  10. Nxc6  10... bxc6  11. Qxc6+  11... Bd7  12. Qf3  12... O-O  13. Bg5  13... h6  14. Bh4  14... Rb8  15. b3  15... Rb6  16. Ne4  16... Be7  17. Nxf6+  17... Bxf6  18. Bxf6  18... Qxf6  19. Qxf6  19... gxf6  20. d5  20... e5  21. Rfc1  21... a5  22. Be2  22... c6  23. dxc6  23... Rxc6  24. Rxc6  24... Bxc6  25. Rc1  25... Bd7  26. Rc5  26... Ra8  27. f4  27... exf4  28. Bf3  28... Ra6  29. Kf2  29... Be6  30. Be2  30... Ra8  31. Bf3  31... Ra6  32. Bb7  32... Ra7  33. Be4  33... Kg7  34. Kf3  34... a4  35. Bc2  35... axb3  36. Bxb3  36... Rb7  37. Kxf4  37... Bxb3  38. axb3  38... Rxb3  39. g3  39... Rb4+  40. Kf3  40... Rb3+  41. Kf4  41... Rb4+  42. Kf3  42... Rb3+  43. Kf4  { The game is a draw. } 1/2-1/2
   },
   {
     Event: "Chessable Masters Final",
@@ -33,42 +126,25 @@
     TimeControl: "-",
     ECO: "E25",
     Termination: "Normal",
-    Annotator: "lichess.org"
-  },
-  {
-    Event: "Chessable Masters Final",
-    Site: "chess24.com INT",
-    Date: "2020.06.27",
-    Round: "1.23",
-    White: "Caruana, Fabiano",
-    Black: "Carlsen, Magnus",
-    Result: "0-1",
-    GameId: "cOKsoa1P",
-    WhiteElo: "2835",
-    BlackElo: "2863",
-    Variant: "Standard",
-    Opening: "Nimzo-Indian Defense: Sämisch Variation, Keres Variation",
-    TimeControl: "-",
-    ECO: "E25",
-    Termination: "Normal",
-    Annotator: "lichess.org"
-  },
-  {
-    Event: "Chessable Masters Final",
-    Site: "chess24.com INT",
-    Date: "2020.06.27",
-    Round: "1.23",
-    White: "Caruana, Fabiano",
-    Black: "Carlsen, Magnus",
-    Result: "0-1",
-    GameId: "cOKsoa1P",
-    WhiteElo: "2835",
-    BlackElo: "2863",
-    Variant: "Standard",
-    Opening: "Nimzo-Indian Defense: Sämisch Variation, Keres Variation",
-    TimeControl: "-",
-    ECO: "E25",
-    Termination: "Normal",
-    Annotator: "lichess.org"
+    Annotator: "lichess.org",
+    PgnView:
+[Event "Chessable Masters Final"]
+[Site "chess24.com INT"]
+[Date "2020.06.27"]
+[Round "1.23"]
+[White "Caruana, Fabiano"]
+[Black "Carlsen, Magnus"]
+[Result "0-1"]
+[GameId "cOKsoa1P"]
+[WhiteElo "2835"]
+[BlackElo "2863"]
+[Variant "Standard"]
+[TimeControl "-"]
+[ECO "E25"]
+[Opening "Nimzo-Indian Defense: Sämisch Variation, Keres Variation"]
+[Termination "Normal"]
+[Annotator "lichess.org"]
+
+1. d4  1... Nf6  2. c4  2... e6  3. Nc3  3... Bb4  4. f3  4... d5  5. a3  5... Bxc3+  6. bxc3  6... c5  7. cxd5  7... Nxd5  8. dxc5  { E25 Nimzo-Indian Defense: Sämisch Variation, Keres Variation } 8... Qa5  9. e4  9... Nf6  10. Be3  10... O-O  11. a4  11... Nfd7  12. Kf2  12... Nxc5  13. Qd6  13... b6  14. Bb5  14... Bd7? { (0.25 → 1.40) Mistake. Qxc3 was best. }  (14... Qxc3 15. Ne2) 15. Ne2  15... Bxb5?! { (1.37 → 2.39) Inaccuracy. a6 was best. }  (15... a6 16. Bxc5) 16. Bxc5  16... bxc5  17. Qxc5  17... Nd7  18. Qxb5?? { (2.22 → -0.37) Blunder. axb5 was best. }  (18. axb5 Qd8 19. Qd6 Qc8 20. c4 Nc5 21. Rhd1 Nb3 22. Ra4 Nc5 23. Ra3 a6 24. Qc6 axb5) 18... Qc7  19. Rhd1  19... Ne5?! { (-0.42 → 0.37) Inaccuracy. Rfd8 was best. }  (19... Rfd8 20. Rd4) 20. f4  20... Ng4+  21. Kf3  21... Nf6  22. Qe5  22... Qe7  23. Rd4  23... Rac8  24. Rb1  24... Rfd8  25. Rxd8+?! { (0.59 → 0.00) Inaccuracy. Rbd1 was best. }  (25. Rbd1) 25... Qxd8  26. Qd4  26... Qc7  27. Rd1  27... h6  28. g4  28... Re8  29. Qd6  29... Qc4  30. Qb4  30... Qc8  31. Ng3  31... e5  32. f5  32... Rd8  33. Rxd8+  33... Qxd8  34. Ke2?! { (-0.09 → -0.77) Inaccuracy. Qb1 was best. }  (34. Qb1 Qd2) 34... Nxg4  35. Nf1?! { (-0.99 → -1.99) Inaccuracy. h3 was best. }  (35. h3 Nf6 36. Qc5 Qb8 37. Qb4 Qc8 38. Kd3 Kh7 39. a5 Qa6+ 40. Ke3 h5 41. Qc5 h4) 35... a5  36. Qb5?! { (-1.76 → -2.41) Inaccuracy. Qb1 was best. }  (36. Qb1 Qg5 37. Qd3 Nxh2 38. Nxh2 Qg2+ 39. Ke1 Qxh2 40. Qd7 Qg3+ 41. Ke2 Qg4+ 42. Ke3 f6) 36... Qh4  37. Nd2? { (-2.10 → -3.94) Mistake. Kd1 was best. }  (37. Kd1 Kh7) 37... Qxh2+  38. Kd3  38... Qg3+  39. Kc2  39... Ne3+  40. Kb3  40... Qe1  41. Qd3  41... Qd1+  42. Ka2  42... Qxa4+  43. Kb2  43... Ng4  44. Nb3  44... Nf6  45. Nc5  45... Qc6  46. Qd8+  46... Kh7  47. Qe7  47... Qb5+  48. Kc2  48... a4  49. Qxe5  49... a3  50. Nd3  50... Qa4+  { White resigns. } 0-1
   }
 ]

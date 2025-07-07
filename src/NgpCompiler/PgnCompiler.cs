@@ -23,7 +23,7 @@ namespace NgpCompiler
                 var pgns = new List<Pgn>();
                 foreach (Match match in matches)
                 {
-                    var antlrInput = new AntlrInputStream(pgnStr);
+                    var antlrInput = new AntlrInputStream(match.Value);
                     var lexer = new PgnLexer(antlrInput);
                     var tokens = new CommonTokenStream(lexer);
 
@@ -32,6 +32,9 @@ namespace NgpCompiler
 
                     var checker = new PgnChecker();
                     checker.Visit(tree);
+
+                    var pgn = checker.Pgn;
+                    pgn.PgnView = match.Value;
 
                     pgns.Add(checker.Pgn);
                 }
