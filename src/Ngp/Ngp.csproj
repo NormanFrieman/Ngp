@@ -9,6 +9,7 @@
     <Author>NormanFrieman</Author>
     <Product>Ngp</Product>
     <RepositoryUrl>https://github.com/NormanFrieman/ngp</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -26,4 +27,7 @@
     <PackageReference Include="Antlr4BuildTasks" Version="12.10.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="True" PackagePath="\" />
+  </ItemGroup>
 </Project>
