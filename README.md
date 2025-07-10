@@ -20,8 +20,7 @@ Install-Package PGNParser
 
 ## 🧩 Example Usage
 ```csharp
-using NgpConverter;
-using NgpConverter.Models;
+using Ngp;
 
 string pgnText = @"
 [Event ""F/S Return Match""]
@@ -35,9 +34,9 @@ string pgnText = @"
 1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6
 ";
 
-Pgn game = Ngp.Convert(pgnText);
+Pgn game = Pgn.Convert(pgnText);
 
 Console.WriteLine(game.White); // Fischer, Robert J.
 ```
 
-The Pgn class can be seen [here](https://github.com/NormanFrieman/Ngp/blob/main/src/NgpConverter/Models/Pgn.cs)
+The Pgn class can be seen [here](https://github.com/NormanFrieman/Ngp/blob/main/src/Ngp/Pgn.cs)
