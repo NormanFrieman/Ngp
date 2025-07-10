@@ -1,11 +1,10 @@
 ﻿using Antlr4.Runtime;
-using NgpConverter.Generated;
-using NgpConverter.Models;
+using Ngp.Generated;
 using System.Text.RegularExpressions;
 
-namespace NgpConverter
+namespace Ngp
 {
-    public static class PgnCompiler
+    internal static class PgnCompiler
     {
         private static readonly string _removeBrace = "\\{[^{}]*\\}|\\([^()]*\\)";
         private static readonly string _removeParen = "[!?]";

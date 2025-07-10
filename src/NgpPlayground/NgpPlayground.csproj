@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NgpConverter\NgpConverter.csproj" />
+    <ProjectReference Include="..\Ngp\Ngp.csproj" />
   </ItemGroup>
 
 </Project>

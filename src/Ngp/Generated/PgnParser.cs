@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generated from C:/Users/AEVO-EZEQUIEL/Documents/projetos/Ngp/src/NgpConverter/Pgn.g4 by ANTLR 4.13.1
+// Generated from C:/Users/AEVO-EZEQUIEL/Documents/projetos/Ngp/src/Ngp/Pgn.g4 by ANTLR 4.13.1
 
 // Unreachable code detected
 #pragma warning disable 0162
@@ -19,7 +19,7 @@
 // Ambiguous reference in cref attribute
 #pragma warning disable 419
 
-namespace NgpConverter.Generated {
+namespace Ngp.Generated {
 using System;
 using System.IO;
 using System.Text;
@@ -279,4 +279,4 @@ public partial class PgnParser : Parser {
 
 
 }
-} // namespace NgpConverter.Generated
+} // namespace Ngp.Generated

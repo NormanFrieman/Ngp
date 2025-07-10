@@ -1,7 +1,8 @@
-﻿namespace NgpConverter.Models
+﻿namespace Ngp
 {
     public class Pgn
     {
+        #region Attrs
         public string Event { get; set; }
         public string Site { get; set; }
         public string Date { get; set; }
@@ -29,11 +30,16 @@
         public string StudyName { get; set; }
         public string ChapterName { get; set; }
 
-        public string UTCDate { get; set; }
         public string UTCTime { get; set; }
         public string GameURL { get; set; }
 
         public IEnumerable<string> Moves { get; set; }
         public string PgnView { get; set; }
+        #endregion
+
+        public static IEnumerable<Pgn> Convert(string pgnStr)
+        {
+            return PgnCompiler.Compile(pgnStr);
+        }
     }
 }

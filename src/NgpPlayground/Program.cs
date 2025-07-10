@@ -1,4 +1,4 @@
-﻿using NgpConverter;
+﻿using Ngp;
 
 namespace NgpPlayground
 {
@@ -26,7 +26,7 @@ namespace NgpPlayground
 
         static void Main(string[] args)
         {
-            var pgns = Ngp.Convert(pgnStr);
+            var pgns = Pgn.Convert(pgnStr);
 
             foreach (var pgn in pgns)
             {

@@ -1,4 +1,4 @@
-﻿using NgpConverter;
+﻿using Ngp;
 using VerifyXunit;
 
 namespace NgpTest
@@ -9,7 +9,7 @@ namespace NgpTest
         public Task Convert_Success()
         {
             // Act
-            var pgns = Ngp.Convert(pgnStr);
+            var pgns = Pgn.Convert(pgnStr);
 
             // Assert
             return Verifier.Verify(pgns);
