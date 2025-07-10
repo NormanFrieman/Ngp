@@ -15,7 +15,7 @@ dotnet add package Ngp
 Using the Package Manager
 
 ```bash
-Install-Package PGNParser
+Install-Package Ngp
 ```
 
 ## 🧩 Example Usage
